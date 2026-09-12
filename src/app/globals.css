@@ -1,0 +1,135 @@
+@import "tailwindcss";
+
+:root {
+  --color-black: #000000;
+  --color-white: #ffffff;
+  --color-gray-light: #f5f5f5;
+  --color-gray-mid: #e5e5e5;
+  --color-gray-text: #4b4b4b;
+}
+
+@theme inline {
+  --color-ceronix-black: var(--color-black);
+  --color-ceronix-white: var(--color-white);
+  --color-ceronix-gray-light: var(--color-gray-light);
+  --color-ceronix-gray-mid: var(--color-gray-mid);
+  --color-ceronix-gray-text: var(--color-gray-text);
+  --font-sans: var(--font-inter);
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+body {
+  background: var(--color-white);
+  color: var(--color-black);
+  font-family: var(--font-inter), Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+::selection {
+  background: var(--color-black);
+  color: #ffffff;
+}
+
+.text-balance {
+  text-wrap: balance;
+}
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-up {
+  animation: fade-up 0.7s ease forwards;
+}
+
+@keyframes pulse-soft {
+  0%,
+  100% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+.animate-pulse-soft {
+  animation: pulse-soft 3s ease-in-out infinite;
+}
+
+/* hidden scrollbar, scrolling still works */
+::-webkit-scrollbar {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+.prose-ceronix {
+  font-size: 1.0625rem;
+  line-height: 1.75;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.prose-ceronix h2 {
+  font-size: 1.75rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  color: var(--color-black);
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.prose-ceronix h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--color-black);
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+}
+
+.prose-ceronix p {
+  margin-bottom: 1.25rem;
+}
+
+.prose-ceronix ul,
+.prose-ceronix ol {
+  margin-bottom: 1.25rem;
+  padding-left: 1.25rem;
+}
+
+.prose-ceronix li {
+  margin-bottom: 0.5rem;
+}
+
+.prose-ceronix li > p {
+  margin-bottom: 0;
+}
+
+.prose-ceronix strong {
+  color: var(--color-black);
+  font-weight: 700;
+}
+
+.prose-ceronix a {
+  color: var(--color-black);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.prose-ceronix a:hover {
+  color: rgba(0, 0, 0, 0.6);
+}

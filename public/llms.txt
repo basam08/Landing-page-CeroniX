@@ -1,0 +1,16 @@
+# Ceronix
+
+> Ecosistema integrado de automatización B2B para ventas y operaciones. Ceronix combina Web Hub, Motor SVA (Sistema de Ventas Automatizado) y MVP Ignition para automatizar hasta el 70% de las tareas comerciales, aumentar la conversión un 30% y lograr ROI en 48 horas.
+
+Ceronix trabaja con tres sectores principales en España: B2B/Consultoría (filtro cotizador y agendas automáticas para cualificar leads corporativos), Servicios Locales (citas automáticas 24/7 para clínicas, gimnasios y peluquerías) y Real Estate (cualificación automática de inversores por presupuesto).
+
+## Páginas principales
+
+- [Home](https://ceronix.es/): Presentación del Sistema SVA, resultados, sectores y proyectos del ecosistema Ceronix.
+- [Blog](https://ceronix.es/blog): Guías prácticas sobre automatización B2B, cualificación de leads y el Sistema SVA.
+
+## Contacto
+
+- Email: info@ceronix.es
+- WhatsApp: +34 633 77 22 81
+- LinkedIn: https://www.linkedin.com/company/ceronix/about/
