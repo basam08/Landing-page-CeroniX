@@ -18,6 +18,7 @@ function ProjectCard({
   ctaText,
   ctaHref,
   ctaVariant,
+  ctaExternal = false,
 }: {
   index: number;
   media: ReactNode;
@@ -30,6 +31,7 @@ function ProjectCard({
   ctaText: string;
   ctaHref: string;
   ctaVariant: "solid" | "outline";
+  ctaExternal?: boolean;
 }) {
   const tilt = useTiltHover();
 
@@ -81,6 +83,7 @@ function ProjectCard({
         </ul>
         <a
           href={ctaHref}
+          {...(ctaExternal ? { target: "_blank", rel: "noopener noreferrer" } : {})}
           className={
             ctaVariant === "solid"
               ? "mt-auto inline-flex items-center justify-center rounded-full bg-white hover:bg-white/85 px-5 py-3 text-sm font-semibold text-black transition-colors"
@@ -108,106 +111,42 @@ export default function Projects() {
           </h2>
         </div>
 
-        <div className="grid lg:grid-cols-3 gap-6">
-          <ProjectCard
-            index={0}
-            logo="/logo-mente-emprende.png"
-            badge={
-              <span className="absolute top-4 left-4 z-10 inline-flex items-center rounded-full bg-white/15 border border-white/40 px-3 py-1 text-xs font-semibold text-white">
-                PRÓXIMAMENTE — SEPTIEMBRE 2026
-              </span>
-            }
-            media={
-              <div className="h-full flex items-center justify-center bg-gradient-to-br from-white/10 via-black to-black">
-                <div className="h-24 w-24 rounded-3xl bg-white p-4 shadow-xl shadow-black/40">
-                  <Image
-                    src="/logo-mente-emprende.png"
-                    alt="Mente Emprende"
-                    width={96}
-                    height={96}
-                    className="h-full w-full object-contain"
-                  />
+        <div className="grid place-items-center">
+          <div className="w-full max-w-md">
+            <ProjectCard
+              index={0}
+              logo="/logo-mente-emprende.png"
+              badge={
+                <span className="absolute top-4 left-4 z-10 inline-flex items-center rounded-full bg-white/15 border border-white/40 px-3 py-1 text-xs font-semibold text-white">
+                  PRÓXIMAMENTE — SEPTIEMBRE 2026
+                </span>
+              }
+              media={
+                <div className="h-full flex items-center justify-center bg-gradient-to-br from-white/10 via-black to-black">
+                  <div className="h-24 w-24 rounded-3xl bg-white p-4 shadow-xl shadow-black/40">
+                    <Image
+                      src="/logo-mente-emprende.png"
+                      alt="Mente Emprende"
+                      width={96}
+                      height={96}
+                      className="h-full w-full object-contain"
+                    />
+                  </div>
                 </div>
-              </div>
-            }
-            title="Mente Emprende"
-            desc="Nuestra aplicación de productividad para emprendedores. Aprende a automatizar tu negocio desde tu teléfono. Próximamente en Google Play Store."
-            features={[
-              "Lecciones sobre automatización B2B",
-              "Audios cortos y prácticos",
-              "Comunidad de emprendedores",
-            ]}
-            ctaText="Unirse a lista de espera"
-            ctaHref="#contacto"
-            ctaVariant="outline"
-          />
-
-          <ProjectCard
-            index={1}
-            logo="/logo-grob-ai-transparent.png"
-            logoBg="black"
-            badge={
-              <span className="absolute top-4 left-4 z-10 inline-flex items-center rounded-full bg-white/15 border border-white/40 px-3 py-1 text-xs font-semibold text-white">
-                EN DESARROLLO — 2027
-              </span>
-            }
-            media={
-              <div className="h-full flex items-center justify-center bg-gradient-to-br from-white/[0.06] via-black to-black">
-                <div className="h-24 w-24 rounded-3xl bg-black border border-white/15 p-4 shadow-xl shadow-black/40">
-                  <Image
-                    src="/logo-grob-ai-transparent.png"
-                    alt="Grob AI"
-                    width={96}
-                    height={96}
-                    className="h-full w-full object-contain"
-                  />
-                </div>
-              </div>
-            }
-            title="Grob AI"
-            desc="Tu coach de ventas con IA. Mantén conversaciones con inteligencia artificial para entrenar tu pitch, el manejo de objeciones y el cierre — como si ensayaras con un cliente real, cuando quieras."
-            features={[
-              "Conversaciones en tiempo real con IA",
-              "Análisis de tu técnica de venta",
-              "Retroalimentación inmediata y simulaciones de casos reales",
-            ]}
-            ctaText="Unirse a waitlist"
-            ctaHref="#contacto"
-            ctaVariant="outline"
-          />
-
-          <ProjectCard
-            index={2}
-            logo="/logo-hubexpert-transparent.png"
-            badge={
-              <span className="absolute top-4 left-4 z-10 inline-flex items-center rounded-full bg-white/15 border border-white/40 px-3 py-1 text-xs font-semibold text-white">
-                EN DESARROLLO — 2028
-              </span>
-            }
-            media={
-              <div className="h-full flex items-center justify-center bg-gradient-to-br from-white/[0.06] via-black to-black">
-                <div className="h-24 w-24 rounded-3xl bg-white p-5 shadow-xl shadow-black/40">
-                  <Image
-                    src="/logo-hubexpert-transparent.png"
-                    alt="HubExpert"
-                    width={96}
-                    height={96}
-                    className="h-full w-full object-contain"
-                  />
-                </div>
-              </div>
-            }
-            title="HubExpert"
-            desc="La plataforma SaaS de gestión integral para el Sistema SVA. Un único dashboard para controlar Web Hub, SVA y MVP. Reporting avanzado, APIs abiertas para integraciones, y análisis predictivo."
-            features={[
-              "Dashboard unificado del ecosistema completo",
-              "Reporting y análisis avanzado",
-              "APIs abiertas e integraciones custom",
-            ]}
-            ctaText="Solicitar acceso beta"
-            ctaHref="#contacto"
-            ctaVariant="outline"
-          />
+              }
+              title="Mente Emprende"
+              desc="Nuestra aplicación de productividad para emprendedores. Aprende a automatizar tu negocio desde tu teléfono. Próximamente en Google Play Store."
+              features={[
+                "Lecciones sobre automatización B2B",
+                "Audios cortos y prácticos",
+                "Comunidad de emprendedores",
+              ]}
+              ctaText="Unirse a lista de espera"
+              ctaHref="https://mentemprende.app"
+              ctaVariant="outline"
+              ctaExternal
+            />
+          </div>
         </div>
       </div>
     </section>

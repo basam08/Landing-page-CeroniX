@@ -80,9 +80,16 @@ export default function Footer() {
           <p className="text-sm font-bold tracking-wide text-white/80 mb-4">PRODUCTOS</p>
           <ul className="space-y-3 text-sm text-white/50">
             <li><a href="#sistema" className="hover:text-white transition-colors">Sistema SVA</a></li>
-            <li><a href="#proyectos" className="hover:text-white transition-colors">Mente Emprende · Sept 2026</a></li>
-            <li><a href="#proyectos" className="hover:text-white transition-colors">Grob AI · 2027</a></li>
-            <li><a href="#proyectos" className="hover:text-white transition-colors">HubExpert · 2028</a></li>
+            <li>
+              <a
+                href="https://mentemprende.app"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-white transition-colors"
+              >
+                Mente Emprende · Sept 2026
+              </a>
+            </li>
           </ul>
         </div>
 
