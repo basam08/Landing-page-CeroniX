@@ -22,7 +22,7 @@ const FAQS = [
   },
   {
     q: "¿Hay permanencia o contrato a largo plazo?",
-    a: "No. Trabajamos sin permanencia: si el sistema no funciona para tu negocio, te vas cuando quieras, sin letra pequeña ni contratos que te aten.",
+    a: "Todos nuestros servicios incluyen un contrato de mantenimiento que se renueva cada año. No hay permanencia forzada más allá de eso: si el sistema no funciona para tu negocio, simplemente no se renueva, sin letra pequeña.",
   },
 ];
 
