@@ -11,8 +11,8 @@ const STEPS = [
   },
   {
     tag: "PRÓXIMO",
-    title: "IA en cada capa del negocio",
-    desc: "Automatización, relación con clientes y nuevas oportunidades de crecimiento.",
+    title: "Mente Emprende, la mejor app de emprendimiento",
+    desc: "Escalar Mente Emprende a más usuarios y consolidarla como la referencia para aprender a emprender con IA.",
   },
   {
     tag: "2030",
