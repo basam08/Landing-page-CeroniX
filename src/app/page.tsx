@@ -10,9 +10,10 @@ import ConnectSection from "@/components/ConnectSection";
 import Projects from "@/components/Projects";
 import TrustBand from "@/components/TrustBand";
 import WhyNow from "@/components/WhyNow";
-import Vision from "@/components/Vision";
 import Founder from "@/components/Founder";
+import Vision from "@/components/Vision";
 import PerformanceMatrix from "@/components/PerformanceMatrix";
+import Faq from "@/components/Faq";
 import FinalCta from "@/components/FinalCta";
 import Footer from "@/components/Footer";
 
@@ -45,6 +46,7 @@ export default function Home() {
           reverse
         />
         <PerformanceMatrix />
+        <Faq />
         <FinalCta />
       </main>
       <Footer />
