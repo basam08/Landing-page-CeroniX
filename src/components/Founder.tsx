@@ -2,7 +2,6 @@
 
 import Image from "next/image";
 import { motion } from "framer-motion";
-import SectionFade from "./SectionFade";
 
 const SITE_URL = "https://ceronix.es";
 
@@ -25,7 +24,6 @@ const personJsonLd = {
 export default function Founder() {
   return (
     <section id="sobre-mi" className="relative bg-white py-24 md:py-32">
-      <SectionFade from="black" />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(personJsonLd) }}

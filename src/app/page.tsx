@@ -36,8 +36,8 @@ export default function Home() {
         <Projects />
         <TrustBand />
         <WhyNow />
-        <Vision />
         <Founder />
+        <Vision />
         <ContrastRings
           eyebrow="EL RESULTADO"
           heading="De la fricción al equilibrio."
