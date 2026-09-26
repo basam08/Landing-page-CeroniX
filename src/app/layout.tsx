@@ -86,6 +86,12 @@ const jsonLd = {
   url: SITE_URL,
   logo: `${SITE_URL}/logo-ceronix.png`,
   description: DESCRIPTION,
+  founder: {
+    "@type": "Person",
+    name: "Basam El Sbeiai",
+    jobTitle: "Fundador y CEO",
+    image: `${SITE_URL}/basam-el-sbeiai-ceo.png`,
+  },
   sameAs: [
     "https://www.linkedin.com/company/ceronix/about/",
     "https://www.instagram.com/ceron.ix/",

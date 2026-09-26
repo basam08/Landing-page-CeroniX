@@ -3,12 +3,15 @@ import Hero from "@/components/Hero";
 import ContrastRings from "@/components/ContrastRings";
 import SvaOverview from "@/components/SvaOverview";
 import SvaBreakdown from "@/components/SvaBreakdown";
+import AdditionalServices from "@/components/AdditionalServices";
 import Metrics from "@/components/Metrics";
 import Sectors from "@/components/Sectors";
 import ConnectSection from "@/components/ConnectSection";
 import Projects from "@/components/Projects";
 import TrustBand from "@/components/TrustBand";
 import WhyNow from "@/components/WhyNow";
+import Vision from "@/components/Vision";
+import Founder from "@/components/Founder";
 import PerformanceMatrix from "@/components/PerformanceMatrix";
 import FinalCta from "@/components/FinalCta";
 import Footer from "@/components/Footer";
@@ -26,12 +29,15 @@ export default function Home() {
         />
         <SvaOverview />
         <SvaBreakdown />
+        <AdditionalServices />
         <Metrics />
         <Sectors />
         <ConnectSection />
         <Projects />
         <TrustBand />
         <WhyNow />
+        <Vision />
+        <Founder />
         <ContrastRings
           eyebrow="EL RESULTADO"
           heading="De la fricción al equilibrio."
