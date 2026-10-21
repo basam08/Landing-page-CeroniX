@@ -29,6 +29,37 @@ const SERVICES = [
     title: "Desarrollo de aplicaciones",
     desc: "Diseñamos y desarrollamos aplicaciones móviles personalizadas para empresas que necesitan ofrecer servicios, gestionar clientes, mejorar la comunicación o crear nuevas experiencias digitales.",
   },
+  {
+    id: "call-bots",
+    icon: (
+      <path
+        d="M4 4.5c0-.83.67-1.5 1.5-1.5H8l1.6 4.4-1.8 1.4a12.2 12.2 0 005.5 5.5l1.4-1.8L19.1 14v2.5c0 .83-.67 1.5-1.5 1.5C10.3 18 4 11.7 4 4.5z"
+        stroke="currentColor"
+        strokeWidth="1.6"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    ),
+    title: "Bots de llamada con IA",
+    desc: "Creamos agentes de voz con IA que responden y hacen llamadas automáticamente: atienden consultas, cualifican leads y dan seguimiento dentro de tu embudo de ventas.",
+  },
+  {
+    id: "video",
+    icon: (
+      <>
+        <rect x="2.5" y="5.5" width="13" height="13" rx="2" stroke="currentColor" strokeWidth="1.6" />
+        <path
+          d="M18.5 9.3l3-1.9v9.2l-3-1.9"
+          stroke="currentColor"
+          strokeWidth="1.6"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+      </>
+    ),
+    title: "Edición de vídeo",
+    desc: "Edición de vídeo profesional y efectiva para contenido de marca, redes sociales y material de ventas, pensada para convertir audiencia en clientes.",
+  },
 ];
 
 function ServiceCard({ s, index }: { s: (typeof SERVICES)[number]; index: number }) {

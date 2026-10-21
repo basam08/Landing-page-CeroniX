@@ -33,7 +33,7 @@ export default function Projects() {
         >
           <div className="relative md:w-72 shrink-0 flex items-center justify-center bg-gradient-to-br from-white/10 via-black to-black p-10">
             <span className="absolute top-4 left-4 z-10 inline-flex items-center rounded-full bg-white/15 border border-white/40 px-3 py-1 text-xs font-semibold text-white">
-              PRÓXIMAMENTE — SEPTIEMBRE 2026
+              YA DISPONIBLE
             </span>
             <div className="h-28 w-28 rounded-3xl bg-white p-5 shadow-xl shadow-black/40">
               <Image

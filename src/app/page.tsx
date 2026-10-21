@@ -9,6 +9,7 @@ import Sectors from "@/components/Sectors";
 import ConnectSection from "@/components/ConnectSection";
 import Projects from "@/components/Projects";
 import TrustBand from "@/components/TrustBand";
+import Testimonials from "@/components/Testimonials";
 import WhyNow from "@/components/WhyNow";
 import Founder from "@/components/Founder";
 import Vision from "@/components/Vision";
@@ -36,6 +37,7 @@ export default function Home() {
         <ConnectSection />
         <Projects />
         <TrustBand />
+        <Testimonials />
         <WhyNow />
         <Founder />
         <Vision />

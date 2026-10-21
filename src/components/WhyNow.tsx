@@ -2,7 +2,6 @@
 
 import { motion } from "framer-motion";
 import { useTiltHover } from "@/hooks/useTiltHover";
-import SectionFade from "./SectionFade";
 
 const REASONS = [
   {
@@ -15,7 +14,7 @@ const REASONS = [
   },
   {
     title: "Implementación en 2 semanas",
-    desc: "MVP Ignition activa tu primera caja en 48h; el resto del sistema queda desplegado en menos de 15 días.",
+    desc: "MVP Ignition activa tus primeros resultados y el resto del sistema queda desplegado en torno a 2 semanas (puede variar según el proyecto).",
   },
   {
     title: "Sin permanencia",
@@ -49,7 +48,6 @@ function ReasonCard({ r, index }: { r: (typeof REASONS)[number]; index: number }
 export default function WhyNow() {
   return (
     <section className="relative bg-white py-24 md:py-32">
-      <SectionFade from="black" />
       <div className="mx-auto max-w-7xl px-6 lg:px-10">
         <div className="max-w-2xl mb-16">
           <p className="text-sm font-semibold tracking-wide text-black/50 mb-3">

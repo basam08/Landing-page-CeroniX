@@ -10,7 +10,7 @@ const FAQS = [
   },
   {
     q: "¿Qué es el Sistema SVA de Ceronix?",
-    a: "Es el ecosistema integrado de Ceronix, compuesto por tres capas: Web Hub (tu web como vendedor que trabaja 24/7), Motor SVA (automatización de citas, cualificación y seguimiento) y MVP Ignition (activación rápida de resultados en 48 horas). Las tres capas trabajan juntas para automatizar ventas y operaciones B2B.",
+    a: "Es el ecosistema integrado de Ceronix, compuesto por tres capas: Web Hub (tu web como vendedor que trabaja 24/7), Motor SVA (automatización de citas, cualificación y seguimiento) y MVP Ignition (activación de resultados en torno a 2 semanas). Las tres capas trabajan juntas para automatizar ventas y operaciones B2B.",
   },
   {
     q: "¿Qué servicios ofrece Ceronix además del Sistema SVA?",
@@ -18,7 +18,7 @@ const FAQS = [
   },
   {
     q: "¿Cuánto tiempo tarda en implementarse el sistema?",
-    a: "MVP Ignition activa tu primer resultado visible en 48 horas. El resto del sistema, Web Hub y Motor SVA, queda completamente desplegado en menos de 2 semanas.",
+    a: "MVP Ignition activa tus primeros resultados y el resto del sistema, Web Hub y Motor SVA, queda desplegado en torno a 2 semanas. El plazo exacto puede variar según el proyecto.",
   },
   {
     q: "¿Hay permanencia o contrato a largo plazo?",

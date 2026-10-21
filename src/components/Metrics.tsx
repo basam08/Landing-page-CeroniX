@@ -3,10 +3,10 @@
 import { motion } from "framer-motion";
 
 const METRICS = [
-  { value: "70%", label: "Ahorro en tiempo operativo", note: "El SVA gestiona automáticamente" },
-  { value: "30%", label: "Incremento en conversión web", note: "Hub profesional = confianza" },
-  { value: "48h", label: "Tiempo a primer resultado", note: "MVP Ignition activación rápida" },
-  { value: "∞", label: "Escalabilidad predecible", note: "Crece sin añadir complejidad" },
+  { value: "Automatizado", label: "Ahorro en tiempo operativo", note: "El SVA gestiona tareas repetitivas por ti" },
+  { value: "Más confianza", label: "Con una web profesional", note: "Un Hub bien construido convierte mejor" },
+  { value: "2 semanas", label: "Hasta tu primer resultado", note: "MVP Ignition activa resultados tempranos" },
+  { value: "Sin límite", label: "Escalabilidad predecible", note: "Crece sin añadir complejidad" },
 ];
 
 const PHASES = [
@@ -42,7 +42,7 @@ export default function Metrics() {
               transition={{ duration: 0.5, delay: i * 0.08 }}
               className="rounded-2xl border border-black/10 bg-black/[0.02] p-6"
             >
-              <div className="text-4xl md:text-5xl font-extrabold text-black">{m.value}</div>
+              <div className="text-2xl md:text-3xl font-extrabold text-black leading-tight">{m.value}</div>
               <p className="mt-3 font-semibold text-black/85 text-sm md:text-base">{m.label}</p>
               <p className="mt-1 text-xs text-black/45">{m.note}</p>
             </motion.div>

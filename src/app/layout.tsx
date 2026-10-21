@@ -11,7 +11,7 @@ const inter = Inter({
 const SITE_URL = "https://ceronix.es";
 const TITLE = "Ceronix - Automatización B2B sin Límites | Sistema SVA";
 const DESCRIPTION =
-  "Ecosistema integrado de automatización para ventas y operaciones B2B. Automatiza el 70% de tareas, aumenta la conversión un 30% y consigue ROI en 48h con el Sistema SVA de Ceronix.";
+  "Ecosistema integrado de automatización para ventas y operaciones B2B. Web, automatización de ventas y activación rápida de resultados con el Sistema SVA de Ceronix.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),

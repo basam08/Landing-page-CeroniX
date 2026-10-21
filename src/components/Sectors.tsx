@@ -10,7 +10,7 @@ const SECTORS = [
     title: "B2B / Consultoría",
     subtitle: "Filtro corporativo + demostración automática",
     desc: "El Filtro Cotizador asegura que solo califiques leads corporativos. El autoservicio de agendas permite que CFOs se reserven demostraciones sin email. Cada demanda está cualificada antes de tocarla.",
-    metric: "+85% tasa de cierre cualificada",
+    metric: "Solo hablas con leads ya cualificados",
     cta: "Ver casos de consultoría",
     image:
       "https://images.unsplash.com/photo-1758448756084-c44d73014c07?fm=jpg&q=80&w=1200&auto=format&fit=crop",
@@ -20,7 +20,7 @@ const SECTORS = [
     title: "Servicios Locales",
     subtitle: "Citas automáticas 24/7",
     desc: "Clínicas, gimnasios, peluquerías: sin recepcionista. Tus clientes se reservan en tu calendario real desde la web. El SVA gestiona todo. Tú solo atiende. Crecimiento sin contratar.",
-    metric: "+200% ocupación de horarios",
+    metric: "Agenda llena sin recepcionista",
     cta: "Implementación para locales",
     image:
       "https://images.unsplash.com/photo-1758957646695-ec8bce3df462?fm=jpg&q=80&w=1200&auto=format&fit=crop",
@@ -30,10 +30,30 @@ const SECTORS = [
     title: "Real Estate",
     subtitle: "Calificación de inversores automática",
     desc: "El Filtro Cotizador cualifica inversores por presupuesto real. Los interesados se reservan visitas automáticamente. Gestión de múltiples propiedades desde un solo panel. Cierres más rápidos, menos ruido.",
-    metric: "+40% tiempo ahorrado en cualificación",
+    metric: "Menos tiempo cualificando, más cerrando",
     cta: "Solución para real estate",
     image:
       "https://images.unsplash.com/photo-1758448756207-54505680d130?fm=jpg&q=80&w=1200&auto=format&fit=crop",
+  },
+  {
+    id: "empresarios",
+    title: "Empresarios",
+    subtitle: "Automatización para tu marca personal",
+    desc: "Centraliza tu agenda, cualifica a quien te contacta y deja que el sistema filtre antes de que pierdas tiempo en reuniones que no van a ningún lado. Tu marca personal, trabajando sola.",
+    metric: "Menos tiempo filtrando, más tiempo cerrando",
+    cta: "Solución para empresarios",
+    image:
+      "https://images.unsplash.com/photo-1557426272-fc759fdf7a8d?fm=jpg&q=80&w=1200&auto=format&fit=crop",
+  },
+  {
+    id: "infoproductos",
+    title: "Infoproductos",
+    subtitle: "Embudos que venden mientras duermes",
+    desc: "Automatiza la captación de leads, el seguimiento post-lanzamiento y la atención a compradores de tus cursos o productos digitales, sin perseguir a nadie manualmente.",
+    metric: "Un embudo que trabaja 24/7 por ti",
+    cta: "Solución para infoproductos",
+    image:
+      "https://images.unsplash.com/photo-1588196749597-9ff075ee6b5b?fm=jpg&q=80&w=1200&auto=format&fit=crop",
   },
 ];
 
