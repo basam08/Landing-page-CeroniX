@@ -60,8 +60,17 @@ async function main() {
       priority TEXT CHECK (priority IN ('alta', 'media', 'baja')),
       due_date DATE,
       done BOOLEAN NOT NULL DEFAULT false,
+      project TEXT CHECK (project IN ('servicios', 'mentemprende', 'marca_personal')),
       created_at TIMESTAMPTZ NOT NULL DEFAULT now()
     )
+  `;
+  await sql`ALTER TABLE tasks ADD COLUMN IF NOT EXISTS project TEXT`;
+  await sql`
+    DO $$ BEGIN
+      ALTER TABLE tasks ADD CONSTRAINT tasks_project_check
+        CHECK (project IN ('servicios', 'mentemprende', 'marca_personal'));
+    EXCEPTION WHEN duplicate_object THEN NULL;
+    END $$;
   `;
 
   await sql`
@@ -83,6 +92,19 @@ async function main() {
       ip TEXT NOT NULL,
       created_at TIMESTAMPTZ NOT NULL DEFAULT now()
     )
+  `;
+
+  await sql`
+    CREATE TABLE IF NOT EXISTS bank_balance (
+      id INT PRIMARY KEY DEFAULT 1,
+      amount NUMERIC(12,2) NOT NULL DEFAULT 0,
+      updated_at TIMESTAMPTZ NOT NULL DEFAULT now(),
+      CONSTRAINT bank_balance_single_row CHECK (id = 1)
+    )
+  `;
+  await sql`
+    INSERT INTO bank_balance (id, amount) VALUES (1, 0)
+    ON CONFLICT (id) DO NOTHING
   `;
 
   console.log("Tablas listas.\n");

@@ -1,5 +1,5 @@
 import { sql } from "@/lib/db";
-import { addFinanceEntry, toggleFinanceStatus, deleteFinanceEntry } from "./actions";
+import { addFinanceEntry, toggleFinanceStatus, deleteFinanceEntry, setBankBalance } from "./actions";
 
 type Entry = {
   id: number;
@@ -23,6 +23,9 @@ export default async function FinanzasPage() {
   `;
   const entries = rows as unknown as Entry[];
 
+  const balanceRows = await sql`SELECT amount::text, updated_at::text FROM bank_balance WHERE id = 1`;
+  const bankBalance = Number((balanceRows[0] as { amount: string } | undefined)?.amount ?? 0);
+
   const now = new Date();
   const monthPrefix = `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, "0")}`;
   const thisMonth = entries.filter((e) => e.date.startsWith(monthPrefix));
@@ -41,6 +44,29 @@ export default async function FinanzasPage() {
       <p className="text-sm text-white/40 mb-8">
         Control interno, no sustituye a la facturación legal.
       </p>
+
+      <div className="rounded-xl border border-white/15 bg-white/[0.05] p-5 mb-6 flex flex-wrap items-center justify-between gap-4">
+        <div>
+          <p className="text-xs text-white/40 mb-1">Saldo total en el banco</p>
+          <p className="text-2xl font-bold text-white">{formatEUR(bankBalance)}</p>
+        </div>
+        <form action={setBankBalance} className="flex gap-2">
+          <input
+            name="amount"
+            type="text"
+            inputMode="decimal"
+            placeholder="Nuevo saldo"
+            required
+            className="w-36 rounded-lg border border-white/15 bg-black px-3 py-2 text-sm text-white placeholder:text-white/30 focus:outline-none focus:border-white/40"
+          />
+          <button
+            type="submit"
+            className="rounded-lg border border-white/25 hover:border-white/50 text-white text-sm font-semibold px-4 transition-colors"
+          >
+            Actualizar
+          </button>
+        </form>
+      </div>
 
       <div className="grid grid-cols-3 gap-4 mb-10">
         <div className="rounded-xl border border-white/10 bg-white/[0.03] p-5">

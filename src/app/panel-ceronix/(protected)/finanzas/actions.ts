@@ -35,3 +35,15 @@ export async function deleteFinanceEntry(id: number) {
   await sql`DELETE FROM finance_entries WHERE id = ${id}`;
   revalidatePath("/panel-ceronix/finanzas");
 }
+
+export async function setBankBalance(formData: FormData) {
+  const amountRaw = String(formData.get("amount") || "").replace(",", ".");
+  const amount = Number(amountRaw);
+  if (!Number.isFinite(amount)) return;
+
+  await sql`
+    UPDATE bank_balance SET amount = ${amount}, updated_at = now() WHERE id = 1
+  `;
+
+  revalidatePath("/panel-ceronix/finanzas");
+}

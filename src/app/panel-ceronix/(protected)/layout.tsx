@@ -20,6 +20,12 @@ export default async function ProtectedLayout({
               Hoy
             </a>
             <a
+              href="/panel-ceronix/proyectos"
+              className="text-white/60 hover:text-white transition-colors"
+            >
+              Proyectos
+            </a>
+            <a
               href="/panel-ceronix/finanzas"
               className="text-white/60 hover:text-white transition-colors"
             >
