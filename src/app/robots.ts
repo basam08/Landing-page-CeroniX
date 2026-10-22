@@ -5,6 +5,7 @@ export default function robots(): MetadataRoute.Robots {
     rules: {
       userAgent: "*",
       allow: "/",
+      disallow: "/panel-ceronix",
     },
     sitemap: "https://ceronix.es/sitemap.xml",
   };
