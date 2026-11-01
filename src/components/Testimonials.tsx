@@ -13,14 +13,7 @@ const CLIENTS = [
     logoWidth: 751,
     logoHeight: 560,
     url: "https://adyhairstudio.com",
-  },
-  {
-    id: "mente-emprende",
-    name: "Mente Emprende",
-    logo: "/logo-mente-emprende-transparent.png",
-    logoWidth: 462,
-    logoHeight: 412,
-    url: "https://mentemprende.app",
+    imgClass: "h-32 md:h-40",
   },
   {
     id: "anas",
@@ -29,6 +22,7 @@ const CLIENTS = [
     logoWidth: 89,
     logoHeight: 66,
     url: "https://anaselsbeiai.com",
+    imgClass: "h-20 md:h-24",
   },
 ];
 
@@ -44,21 +38,22 @@ function ClientLogo({ c, index }: { c: (typeof CLIENTS)[number]; index: number }
       onMouseMove={tilt.onMouseMove}
       onMouseLeave={tilt.onMouseLeave}
       style={tilt.style}
-      className="group rounded-3xl border border-black/10 bg-black/[0.02] hover:bg-black/[0.04] hover:border-black/20 transition-colors [transform-style:preserve-3d]"
+      className="group [transform-style:preserve-3d]"
     >
       <a
         href={c.url}
         target="_blank"
         rel="noopener noreferrer"
         aria-label={c.name}
-        className="h-40 flex items-center justify-center p-10"
+        className="flex items-center justify-center p-4"
       >
         <Image
           src={c.logo}
           alt={c.name}
           width={c.logoWidth}
           height={c.logoHeight}
-          className="max-h-full max-w-full w-auto h-auto object-contain transition-transform duration-300 group-hover:scale-105"
+          priority
+          className={`${c.imgClass} w-auto object-contain transition-transform duration-300 group-hover:scale-105`}
         />
       </a>
     </motion.div>
@@ -79,7 +74,7 @@ export default function Testimonials() {
           </h2>
         </div>
 
-        <div className="grid sm:grid-cols-3 gap-6 max-w-4xl">
+        <div className="grid sm:grid-cols-2 gap-6 max-w-2xl items-center">
           {CLIENTS.map((c, i) => (
             <ClientLogo key={c.id} c={c} index={i} />
           ))}
