@@ -79,7 +79,7 @@ export default function Footer() {
         <div>
           <p className="text-sm font-bold tracking-wide text-white/80 mb-4">PRODUCTOS</p>
           <ul className="space-y-3 text-sm text-white/50">
-            <li><a href="#sistema" className="hover:text-white transition-colors">Sistema SVA</a></li>
+            <li><a href="/#sistema" className="hover:text-white transition-colors">Sistema SVA</a></li>
             <li>
               <a
                 href="https://mentemprende.app"
@@ -96,9 +96,9 @@ export default function Footer() {
         <div>
           <p className="text-sm font-bold tracking-wide text-white/80 mb-4">SECTORES</p>
           <ul className="space-y-3 text-sm text-white/50">
-            <li><a href="#sectores" className="hover:text-white transition-colors">B2B / Consultoría</a></li>
-            <li><a href="#sectores" className="hover:text-white transition-colors">Servicios Locales</a></li>
-            <li><a href="#sectores" className="hover:text-white transition-colors">Real Estate</a></li>
+            <li><a href="/#sectores" className="hover:text-white transition-colors">B2B / Consultoría</a></li>
+            <li><a href="/#sectores" className="hover:text-white transition-colors">Servicios Locales</a></li>
+            <li><a href="/#sectores" className="hover:text-white transition-colors">Real Estate</a></li>
           </ul>
         </div>
 
@@ -116,7 +116,7 @@ export default function Footer() {
               </a>
             </li>
             <li>
-              <a href="#contacto" className="text-white hover:text-white/70 transition-colors">
+              <a href="/#contacto" className="text-white hover:text-white/70 transition-colors">
                 Escríbenos →
               </a>
             </li>

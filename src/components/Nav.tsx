@@ -4,14 +4,14 @@ import Image from "next/image";
 import { useEffect, useState } from "react";
 
 const LINKS = [
-  { href: "#sistema", label: "Sistema SVA" },
-  { href: "#numeros", label: "Resultados" },
-  { href: "#sectores", label: "Sectores" },
-  { href: "#proyectos", label: "Proyectos" },
-  { href: "#sobre-mi", label: "Sobre mí" },
-  { href: "#faq", label: "FAQ" },
+  { href: "/#sistema", label: "Sistema SVA" },
+  { href: "/#numeros", label: "Resultados" },
+  { href: "/#sectores", label: "Sectores" },
+  { href: "/#proyectos", label: "Proyectos" },
+  { href: "/#sobre-mi", label: "Sobre mí" },
+  { href: "/#faq", label: "FAQ" },
   { href: "/blog", label: "Blog" },
-  { href: "#contacto", label: "Contacto" },
+  { href: "/#contacto", label: "Contacto" },
 ];
 
 export default function Nav() {
@@ -31,7 +31,7 @@ export default function Nav() {
       }`}
     >
       <nav className="mx-auto max-w-7xl px-6 lg:px-10 flex items-center justify-between h-16 md:h-20">
-        <a href="#" className="flex items-center gap-2.5">
+        <a href="/" className="flex items-center gap-2.5">
           <Image
             src="/logo-ceronix-black.png"
             alt="Ceronix"
@@ -55,7 +55,7 @@ export default function Nav() {
         </div>
 
         <a
-          href="#contacto"
+          href="/#contacto"
           className="hidden md:inline-flex items-center rounded-full bg-black px-5 py-2.5 text-sm font-semibold text-white hover:bg-black/80 transition-colors"
         >
           Hablar con especialista
@@ -89,7 +89,7 @@ export default function Nav() {
             </a>
           ))}
           <a
-            href="#contacto"
+            href="/#contacto"
             onClick={() => setOpen(false)}
             className="inline-flex items-center justify-center rounded-full bg-black px-5 py-3 text-sm font-semibold text-white"
           >
