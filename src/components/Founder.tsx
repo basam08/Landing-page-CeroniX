@@ -71,7 +71,7 @@ export default function Founder() {
                 basadas en inteligencia artificial.
               </p>
               <p>
-                Con 17 años, estoy construyendo Ceronix desde cero mientras
+                Con 18 años, estoy construyendo Ceronix desde cero mientras
                 continúo mis estudios. He desarrollado proyectos propios
                 como Mente Emprende, una aplicación educativa centrada en
                 emprendimiento, y he trabajado en soluciones de software

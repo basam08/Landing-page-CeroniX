@@ -6,7 +6,7 @@ import { motion, AnimatePresence } from "framer-motion";
 const FAQS = [
   {
     q: "¿Quién es Basam El Sbeiai?",
-    a: "Basam El Sbeiai es el fundador y CEO de Ceronix. Con 17 años, está construyendo Ceronix desde cero mientras continúa sus estudios, combinando desarrollo de software, aplicaciones e inteligencia artificial. También ha creado Mente Emprende, una aplicación educativa centrada en emprendimiento.",
+    a: "Basam El Sbeiai es el fundador y CEO de Ceronix. Con 18 años, está construyendo Ceronix desde cero mientras continúa sus estudios, combinando desarrollo de software, aplicaciones e inteligencia artificial. También ha creado Mente Emprende, una aplicación educativa centrada en emprendimiento.",
   },
   {
     q: "¿Qué es el Sistema SVA de Ceronix?",

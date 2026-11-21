@@ -57,18 +57,6 @@ export default function Vision() {
               ciberseguridad capaces de proteger empresas y usuarios frente
               a las amenazas digitales.
             </p>
-
-            <div className="!mt-10 rounded-2xl border border-white/15 bg-white/[0.04] px-6 py-7">
-              <p className="text-lg md:text-xl font-bold text-white leading-snug mb-3">
-                Nuestro objetivo final: crear tecnología que no solo
-                resuelva los problemas de hoy, sino que anticipe los
-                problemas del mañana.
-              </p>
-              <p className="text-sm text-white/45">
-                Algún día queremos intentar construir una de las soluciones
-                de ciberseguridad más avanzadas del mundo.
-              </p>
-            </div>
           </motion.div>
 
           <motion.div
